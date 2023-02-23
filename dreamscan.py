@@ -43,8 +43,8 @@ print('''
 # Define the loading strings
 loading1 = f'{RED}■▢▢▢▢▢▢▢▢▢{END} 10%\r'
 loading2 = f'{YELLOW}■■■■▢▢▢▢▢▢{END} 40%\r'
-loading3 = f'{BLUE}■■■■■■■■▢▢{END} 80%\r'
-loading4 = f'{BLUE}■■■■■■■■■■{END} 99%\r'
+loading3 = f'{GREEN}■■■■■■■■▢▢{END} 80%\r'
+loading4 = f'{GREEN}■■■■■■■■■■{END} 99%\r'
 loading5 = f'{GREEN}■■■■■■■■■■{END} 100%\r'
 
 print(loading1, end='')
@@ -64,7 +64,7 @@ print('''
 
 def main():
  
-    #Prompt the user for inputs
+    #Prompt the user for Nmap inputs
     target = input("Enter target IP address or range: ")
     scan_type = input("Enter scan type (ex. TCP, UDP, SYN, etc.)(Leave blank for default TCP): ")
     port_range = input("Enter port or port range (ex. 1-65535 or a single port like 22 for SSH): ")
