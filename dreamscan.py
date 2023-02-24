@@ -91,7 +91,7 @@ def main():
     print("Loading Exploits...")
 
     # Execute the searchsploit command with the given keyword
-    output = subprocess.check_output(["searchsploit", "-t", keyword], universal_newlines=True)
+    output = subprocess.check_output(["searchsploit", "-t", keyword], universal_newlines=True, encoding='iso-8859-1')
 
     # Print the output to the console
     print(output)
